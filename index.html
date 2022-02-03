@@ -3,3 +3,4 @@
 <script>$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://google.com') + '&callback=?', function(data){
 	window.yeet=data.contents;
 });</script>
+<body onload="document.body.innerHTML = yeet;"></body
