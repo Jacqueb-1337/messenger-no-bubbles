@@ -1,1 +1,6 @@
-<body>hey</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://google.com') + '&callback=?', function(data){
+	window.yeet=data.contents;
+});</script>
+<body onload="document.body.innerHTML = yeet;">test <button onclick="alert('yeet')">yeet</button></body>
