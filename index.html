@@ -1,6 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://github.com/Jacqueb-1337/messenger-no-bubbles/releases/latest') + '&callback=?', function(data){
-	$('body').html(data.contents);
-});</script>
-<body>test <button onclick="alert(yeet);">yeet</button></body>
+<script>
+$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://github.com/Jacqueb-1337/messenger-no-bubbles/releases/latest'), function (data) {
+                      $('body').html(data.contents);
+                  });
+                  
+</script>
